@@ -7,7 +7,8 @@
 </tr>
 
 Hey World
- 
+プッシュは反映されたか？
+
 <?php foreach ($posts as $post): ?>
     <tr>
     <td><?php echo $post->id; ?></td>
