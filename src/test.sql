@@ -1,4 +1,4 @@
-CREATE TABLE posts (
+CREATE TABLE datas (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(50),
     body TEXT,

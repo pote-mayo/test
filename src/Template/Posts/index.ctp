@@ -9,7 +9,7 @@
 Hey World
 プッシュは反映されたか？
 
-<?php foreach ($posts as $post): ?>
+<?php foreach ($xxx as $post): ?>
     <tr>
     <td><?php echo $post->id; ?></td>
     <td>

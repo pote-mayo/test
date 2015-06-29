@@ -33,7 +33,8 @@ class AppController extends Controller
      *
      * @return void
      */
-    public function initialize()
+/*
+	 public function initialize()
     {
         parent::initialize();
         $this->loadComponent('Flash');
@@ -56,4 +57,5 @@ class AppController extends Controller
         // continues to work.
         $this->Auth->allow(['display']);
 	}
+*/
 }

@@ -8,7 +8,7 @@ class PostsController extends AppController {
  
     public function index(){
         $poststable = TableRegistry::get('Posts');
-        $this->set('posts', $poststable->find('all'));
+        $this->set('xxx', $poststable->find('all'));
     }
      
 }
