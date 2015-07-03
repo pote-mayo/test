@@ -33,8 +33,8 @@ class AppController extends Controller
      *
      * @return void
      */
-/*
-	 public function initialize()
+
+	public function initialize()
     {
         parent::initialize();
         $this->loadComponent('Flash');
@@ -47,6 +47,10 @@ class AppController extends Controller
                     ]
                 ]
             ],
+            'loginRedirect' => [
+                'controller' => 'Users',
+                'action' => 'index'
+            ],
             'loginAction' => [
                 'controller' => 'Users',
                 'action' => 'login'
@@ -55,7 +59,6 @@ class AppController extends Controller
         
         // Allow the display action so our pages controller
         // continues to work.
-        $this->Auth->allow(['display']);
+        $this->Auth->allow(['login', 'add', 'logout']);
 	}
-*/
 }

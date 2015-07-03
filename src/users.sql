@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2015 年 6 朁E29 日 08:40
+-- Generation Time: 2015 年 7 朁E03 日 07:36
 -- サーバのバージョン： 5.6.24
 -- PHP Version: 5.6.8
 
@@ -26,12 +26,21 @@ SET time_zone = "+00:00";
 -- テーブルの構造 `users`
 --
 
-DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL,
-  `email` varchar(64) NOT NULL,
-  `password` varchar(64) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `name` varchar(64) NOT NULL,
+  `sex` int(11) NOT NULL COMMENT '0=未設定, 1=男, 2=女',
+  `birthday` date NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- テーブルのデータのダンプ `users`
+--
+
+INSERT INTO `users` (`id`, `email`, `password`, `name`, `sex`, `birthday`) VALUES
+(2, 'aaa@it-lab.co.jp', '$2y$10$9x1on5jFOoCzvsmjIRgFwu1JIUUDFBviE2uwSrwf.V5gM87rhB1ba', 'test', 1, '2015-07-03');
 
 --
 -- Indexes for dumped tables
@@ -51,7 +60,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
