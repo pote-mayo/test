@@ -18,7 +18,7 @@ $this->log($post, 'debug');
 		$userstable = TableRegistry::get('Users');
 $this->log('--- $userstable ---', 'debug');
 $this->log($userstable, 'debug');
-        $user = $userstable->find('all');
+        $user = $userstable->find('all')->all();
 $this->log('--- $user ---', 'debug');
 $this->log($user, 'debug');
 
