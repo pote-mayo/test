@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 return [
     /**
      * Debug Level:
@@ -223,7 +223,7 @@ return [
             'password' => 'test',
             'database' => 'test',
             'encoding' => 'utf8',
-            'timezone' => 'UTC',
+            'timezone' => 'SYSTEM',			// UTC -> SYSTEM
             'cacheMetadata' => true,
 
             /**
@@ -234,7 +234,7 @@ return [
              * decreases performance because each query needs to be traversed and
              * manipulated before being executed.
              */
-            'quoteIdentifiers' => false,
+            'quoteIdentifiers' => true,		//　SQL識別子を""で囲む
 
             /**
              * During development, if using MySQL < 5.6, uncommenting the
@@ -259,9 +259,9 @@ return [
             'password' => 'test',
             'database' => 'test',
             'encoding' => 'utf8',
-            'timezone' => 'UTC',
+            'timezone' => 'SYSTEM',			// UTC -> SYSTEM
             'cacheMetadata' => true,
-            'quoteIdentifiers' => false,
+            'quoteIdentifiers' => true,		//　SQL識別子を""で囲む
             //'init' => ['SET GLOBAL innodb_stats_on_metadata = 0'],
         ],
     ],

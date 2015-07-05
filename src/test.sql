@@ -5,9 +5,3 @@ CREATE TABLE datas (
     created DATETIME DEFAULT NULL,
     modified DATETIME DEFAULT NULL
 );
-INSERT INTO posts (title,body,created)
-    VALUES ('タイトル', 'これは、記事の本文です。', NOW());
-INSERT INTO posts (title,body,created)
-    VALUES ('またタイトル', 'そこに本文が続きます。', NOW());
-INSERT INTO posts (title,body,created)
-    VALUES ('タイトルの逆襲', 'こりゃ本当にわくわくする！うそ。', NOW());
