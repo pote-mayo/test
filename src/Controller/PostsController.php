@@ -5,6 +5,9 @@ use App\Controller\AppController;
 use Cake\ORM\TableRegistry;
  
 class PostsController extends AppController {
+
+	// My Componentを読み込むには！
+    public $components = array('Atfxml');
  
     public function index(){
 		$poststable = TableRegistry::get('Posts');
@@ -21,6 +24,9 @@ $this->log($userstable, 'debug');
         $user = $userstable->find('all')->all();
 $this->log('--- $user ---', 'debug');
 $this->log($user, 'debug');
+
+		// My Componentを使ってみる！
+		$this->Atfxml->LoadXmlFile();
 
 
 	}
